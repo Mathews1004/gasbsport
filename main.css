@@ -22,9 +22,7 @@
     --icon-hover:#c2789a;
 }
 
-body *{
-     
-}
+
 
 body {
     margin: 0;
@@ -39,8 +37,23 @@ body {
     color:var(--text-color);
 }
 
+#Gasbs{
+    
+    
+}
+
+#Gasbs h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    margin-top: 0;
+
+}
+
 footer {
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 #caixa-principal ul{
@@ -88,7 +101,7 @@ footer {
 
     border: 2px solid var(--text-color);
 
-    margin-bottom: 30px;
+    
 }
 
 #social-links {
@@ -96,7 +109,7 @@ footer {
     justify-content: center;
     align-items: center;
 
-    padding: 30px;
+    padding: 10px 30px 10px 30px;
 }
 
 #social-links a {
