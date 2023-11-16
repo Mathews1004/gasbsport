@@ -129,7 +129,7 @@ footer {
     transform: translateY(-50%);
 }
 
-.light switch {
+.light #switch button {
     right: 0;
     left: initial;
 }
