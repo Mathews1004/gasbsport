@@ -2,27 +2,46 @@
     font-family: 'poppins', sans-serif;
 }
 
+:root {
+     --text-color: #f8a92a;
+     --background-color: 
+        background: rgb(253,249,196);
+        background: radial-gradient(circle, rgba(253,249,196,1) 35%, rgba(255,211,139,1) 100%);
+}
+
+.light {
+    --text-color:#c46390;
+     --background-color: 
+        background: rgb(198,179,250);
+        background: radial-gradient(circle, rgba(198,179,250,1) 35%, rgba(201,122,159,1) 100%);
+
+}
+
+body *{
+    color:var(--text-color); 
+}
+
 body {
     margin: 0;
-
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    color: #fff;
+    background: var(--background-color);
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
     padding: 200px 300px;
-
 }
 
 span {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
+footer {
+    padding-top: 40px;
+}
 
 #caixa-principal ul{
     margin: 0;
@@ -35,37 +54,39 @@ span {
 
 #caixa-principal li{
     width: 492px;
-    border: 1px solid white;
+    border: 1px solid var(--text-color);
     border-radius: 5px;
-    
 }
-
 
 #caixa-principal li a{
     display: flex;
     justify-content: center;
     padding: 16px 24px;
     text-decoration: none;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    
+    background-color: rgba(190, 190, 190, 0.5);
 }
 
 #caixa-principal li a:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(190, 190, 190, 0.4);
     transition: 0.2s ease-in-out;
 }
 
-footer {
-    padding-top: 40px;
-}
-
-img {
+#caixa-principal #gabi {
     border-radius: 50%;
 
     width: 152px;
     height: 152px;
-    padding: 30px;
+    margin: 0 171px ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid var(--text-color);
+}
+
+#caixa-principal button {
+    margin: 50px 239px;
 }
 
 #social-links {
@@ -82,7 +103,20 @@ img {
 }
 
 #social-links a:hover{
-    color: #fff;
+    /* color: #fcc56d; */
+    color:#c2789a;
     transition: 0.2s ease-in-out;
 }
+
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: white;
+    border: 0;
+    border-radius: 50%;
+
+    background-image: url(./img/moon-stars.svg) ;
+}
+
+
 
