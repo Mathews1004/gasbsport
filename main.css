@@ -8,6 +8,8 @@
         background: rgb(253,249,196);
         background: radial-gradient(circle, rgba(253,249,196,1) 35%, rgba(255,211,139,1) 100%);
     --switch-bg-url: url(./img/sun.svg);
+    --hover-color:rgba(190, 190, 190, 0.4);
+    --icon-hover:#fcc56d;
 }
 
 .light {
@@ -16,11 +18,12 @@
         background: rgb(198,179,250);
         background: radial-gradient(circle, rgba(198,179,250,1) 35%, rgba(201,122,159,1) 100%);
     --switch-bg-url: url(./img/moon-stars.svg);
-
+    --hover-color:rgba(190, 190, 190, 0.3);
+    --icon-hover:#c2789a;
 }
 
 body *{
-    color:var(--text-color); 
+     
 }
 
 body {
@@ -32,13 +35,8 @@ body {
     align-items: center;
 
     padding: 200px 300px;
-}
 
-span {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    color:var(--text-color);
 }
 
 footer {
@@ -58,6 +56,8 @@ footer {
     width: 492px;
     border: 1px solid var(--text-color);
     border-radius: 5px;
+
+    color:var(--text-color)
 }
 
 #caixa-principal li a{
@@ -66,10 +66,12 @@ footer {
     padding: 16px 24px;
     text-decoration: none;
     background-color: rgba(190, 190, 190, 0.5);
+
+    color:var(--text-color)
 }
 
 #caixa-principal li a:hover {
-    background-color: rgba(190, 190, 190, 0.4);
+    background-color: var(--hover-color);
     transition: 0.2s ease-in-out;
 }
 
@@ -95,17 +97,19 @@ footer {
     align-items: center;
 
     padding: 30px;
+
 }
 
 #social-links a {
     padding: 7px;
     font-size: 1.5em;
+
+    color:var(--text-color)
 }
 
 #social-links a:hover{
-    /* color: #fcc56d; */
-    color:#c2789a;
-    transition: 0.2s ease-in-out;
+    color: var(--icon-hover);
+   
 }
 
 #switch {
@@ -138,11 +142,8 @@ footer {
     display: block;
     width: 64px;
     height: 24px;
-    
-    border: 1px solid black;
+    border: 1px solid red;
     border-radius: 9999px;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
 }
 
 
