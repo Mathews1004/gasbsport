@@ -7,6 +7,7 @@
      --background-color: 
         background: rgb(253,249,196);
         background: radial-gradient(circle, rgba(253,249,196,1) 35%, rgba(255,211,139,1) 100%);
+    --switch-bg-url: url(./img/sun.svg);
 }
 
 .light {
@@ -14,6 +15,7 @@
      --background-color: 
         background: rgb(198,179,250);
         background: radial-gradient(circle, rgba(198,179,250,1) 35%, rgba(201,122,159,1) 100%);
+    --switch-bg-url: url(./img/moon-stars.svg);
 
 }
 
@@ -44,7 +46,7 @@ footer {
 }
 
 #caixa-principal ul{
-    margin: 0;
+    margin-top: 30px;
     padding: 0 ;
     display: flex;
     flex-direction: column;
@@ -83,10 +85,8 @@ footer {
     justify-content: center;
 
     border: 2px solid var(--text-color);
-}
 
-#caixa-principal button {
-    margin: 50px 239px;
+    margin-bottom: 30px;
 }
 
 #social-links {
@@ -108,15 +108,43 @@ footer {
     transition: 0.2s ease-in-out;
 }
 
+#switch {
+    position: relative;
+    width: 64px;
+
+    margin: 0 auto;
+}
+
 #switch button {
     width: 32px;
     height: 32px;
-    background: white;
+    background: white var(--switch-bg-url) no-repeat center;
     border: 0;
     border-radius: 50%;
 
-    background-image: url(./img/moon-stars.svg) ;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
 }
+
+.light switch {
+    right: 0;
+    left: initial;
+}
+
+#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    
+    border: 1px solid black;
+    border-radius: 9999px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
 
 
 
